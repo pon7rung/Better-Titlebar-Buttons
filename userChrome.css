@@ -1,0 +1,32 @@
+.titlebar-close, .titlebar-min, .titlebar-restore, .titlebar-max {
+  transition: color 0.3s !important;
+  transition: background-color 0.3s !important;
+  color: rgb(255, 255, 255) !important;
+}
+
+.titlebar-button{
+  @media not (prefers-contrast) {
+    &.titlebar-close:hover{
+    color: red !important;
+    background-color: rgba(255, 0, 0, 0.144) !important;
+  }
+}
+}
+
+.titlebar-button{
+  @media not (prefers-contrast) {
+    &.titlebar-restore:hover, &.titlebar-max:hover{
+    color: yellow !important;
+    background-color: rgba(255, 217, 0, 0.075) !important;
+  }
+}
+}
+
+.titlebar-button{
+  @media not (prefers-contrast) {
+    &.titlebar-min:hover{
+    color: green !important;
+    background-color: rgba(21, 255, 0, 0.075) !important;
+  }
+}
+}
